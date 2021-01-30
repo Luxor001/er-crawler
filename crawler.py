@@ -58,6 +58,8 @@ nIterazioni = int(math.ceil(nPagine / 10))
 
 for nPagina in range(1, nPagine):
     trovateNuoveDelibere = decodeURL(nPagina, stringaRicerca)
+for nPagina in range(0, nPagine):
+    trovateNuoveDelibere = decodeURL(nPagina + 1, stringaRicerca)
     if trovateNuoveDelibere == True:
         break
 
