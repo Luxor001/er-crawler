@@ -47,7 +47,7 @@ def decodeURL(pagina, stringa):
 
     
 paginaCorrente = 1
-stringaRicerca = 'sogliano'
+stringaRicerca = ''
 URL = f'http://servizissiir.regione.emilia-romagna.it/deliberegiunta/servlet/AdapterHTTP?MODE_VIEW=AJAX&ACTION_NAME=ACTIONRICERCADELIBERE&ENTE=1&tipoAtto=&annoAdozione={datetime.today().year}&numAdozione=&dataAdozioneDa=&dataAdozioneA=&oggetto={stringaRicerca}&did=true&POPULATING=LIST&tableId=ricerca_delibere&_=1611778488297&&ricerca_delibere_LIST_PAGE={paginaCorrente}'
 page = requests.get(URL)
 soup = BeautifulSoup(page.content, 'lxml')
